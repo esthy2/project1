@@ -19,11 +19,11 @@ To create the EKS cluster for this lab, use the following commands:
 
 3. Create an EKS cluster:
  ```bash
-  eksctl create cluster --name utrains-eksctl-cluster --region us-east-1 --nodegroup-name my-nodes --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 2
+  eksctl create cluster --name Esthytech-eksctl-cluster --region us-east-1 --nodegroup-name my-nodes --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 2
 ```
 4- Update the kubeconfig for the new cluster:
 ```bash
-aws eks --region us-east-1 update-kubeconfig --name utrains-eksctl-cluster
+aws eks --region us-east-1 update-kubeconfig --name Esthytech-eksctl-cluster
 ```
 5- Verify Cluster Nodes:
 ```bash
@@ -108,7 +108,7 @@ After successfully done this lab, you must delete all the resources created to a
 ```
 4. Delete the EKS cluster:
 ```bash
-    eksctl delete cluster --name utrains-eksctl-cluster
+    eksctl delete cluster --name Esthytech-eksctl-cluster --region us-east-1
 ```
 
 # Links to Official Documentation of Argo CD:
